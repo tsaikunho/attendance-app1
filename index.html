@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <title>出席點名</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand" id="brand">出席點名</div>
+      <nav class="tabs" id="tabs">
+        <button data-tab="rollcall" class="tab active">點名</button>
+        <button data-tab="services" class="tab">場次</button>
+        <button data-tab="members" class="tab">成員</button>
+        <button data-tab="stats" class="tab">統計</button>
+        <button data-tab="settings" class="tab">設定</button>
+      </nav>
+    </header>
+
+    <main id="app" class="app"></main>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <input type="file" id="importFile" accept="application/json" hidden />
+
+    <script src="js/store.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
